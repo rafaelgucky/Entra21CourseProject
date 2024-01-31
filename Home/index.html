@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            <dl>
-                <dt class="menu-buttons"><a href="#">Home</a></dt>
-                <dt class="menu-buttons"><a href="#">About</a></dt>
-                <dt class="menu-buttons"><a href="#">Notes</a></dt>
-                <dt class="menu-buttons">
+        <nav class="container-fluid">
+            <dl class="row align-items-center justify-content-end h-100">
+                <dt class="col-1"><a href="#" class="text-decoration-none">Home</a></dt>
+                <dt class="col-1"><a href="#" class="text-decoration-none">About</a></dt>
+                <dt class="col-1"><a href="#" class="text-decoration-none">Notes</a></dt>
+                <dt class="col-4">
                     <form action="#">
-                        <input type="text" id="search-bar" placeholder="Search for anything">
+                        <input type="text" class="w-75" id="search-bar" placeholder="Search for anything">
                         <input type="submit" value="🔍" id="btn-search">
                     </form>
                 </dt>
                 
-                <dt>
+                <dt class="col-5">
                     <img onclick="UserMenu()" src="/Images/UserPhoto.jpg" width="35px" id="user-image" alt="user image">
                 </dt>
             </dl>
         </nav>
     </header>
     
-   <main>
+   <main class="container-lg">
         <table>
             <thead>
                 <tr>
@@ -76,47 +77,55 @@
                 </tr>
             </tbody>
         </table>
-        <div id="calendar">
-            <a style="color: black; text-decoration: none;" href="../DayView/dayview.html">
-                <div class="day"></div>
-            </a>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
-            <div class="day"></div>
+        <div id="calendar" class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-1">1</div>
+                <div class="col-2 text-align-right">2</div>
+                <div class="col-2">3</div>
+                <div class="col-2">4</div>
+                <div class="col-2">5</div>
+                <div class="col-2">6</div>
+                <div class="col-1">7</div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-1">8</div>
+                <div class="col-2">9</div>
+                <div class="col-2">10</div>
+                <div class="col-2">11</div>
+                <div class="col-2">12</div>
+                <div class="col-2">13</div>
+                <div class="col-1">14</div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-1">15</div>
+                <div class="col-2">16</div>
+                <div class="col-2">17</div>
+                <div class="col-2">18</div>
+                <div class="col-2">19</div>
+                <div class="col-2">20</div>
+                <div class="col-1">21</div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-1">22</div>
+                <div class="col-2">23</div>
+                <div class="col-2">24</div>
+                <div class="col-2">25</div>
+                <div class="col-2">26</div>
+                <div class="col-2">27</div>
+                <div class="col-1">28</div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-1">29</div>
+                <div class="col-2">30</div>
+                <div class="col-2">31</div>
+            </div>
         </div>
    </main>
    <footer>
     <ul>
-        <li><a href="https://www.facebook.com/profile.php?id=100056212864743" target="_blank"><img src="Images/facebook.png" alt="Facebook"></a></li>
-        <li><a href="https://www.instagram.com/rafael_gucky/" target="_blank" rel="noopener noreferrer"><img src="Images/instagram.jpg" alt="Instagram"></a></li>
-        <li><a href="https://github.com/rafaelgucky?tab=overview&from=2023-12-01&to=2023-12-30" target="_blank" rel="noopener noreferrer"> <img src="Images/github.png" alt="GitHub"></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100056212864743" target="_blank"><img src="../Images/facebook.png" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/rafael_gucky/" target="_blank" rel="noopener noreferrer"><img src="../Images/instagram.jpg" alt="Instagram"></a></li>
+        <li><a href="https://github.com/rafaelgucky?tab=overview&from=2023-12-01&to=2023-12-30" target="_blank" rel="noopener noreferrer"> <img src="../Images/github.png" alt="GitHub"></a></li>
     </ul>
         <p id="name">&copy; Rafael Gucky</p>
    </footer>
@@ -125,4 +134,5 @@
     </div>
 </body>
 <script src="scripts.js"></script>
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </html>
