@@ -1,0 +1,9 @@
+
+main.container{
+    grid-template-columns: calc(100% - 800px) 800px;
+}
+
+section.table{
+    display: grid;
+    grid-template-columns: 100%;
+}

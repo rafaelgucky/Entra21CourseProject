@@ -2,6 +2,10 @@ header > nav > ul{
     display: none;
 }
 
+header > nav{
+    padding: 0px;
+}
+
 header > nav > section.hamburger-menu
 {
     width: 90%;
@@ -11,6 +15,9 @@ header > nav > section.hamburger-menu
     align-items: center;
     margin: auto;
 }
+div.hamburger-buttom{
+    filter: invert();
+}
 header > nav > section.hamburger-menu > div > img{
     width: 30px;
     cursor: pointer;
@@ -18,6 +25,9 @@ header > nav > section.hamburger-menu > div > img{
 div#mobile-user-image{
     display: grid;
     justify-content: end;
+}
+div#mobile-user-image > img{
+    border-radius: 5px;
 }
 section#hamburger-menu{
     width: 100%;
@@ -69,6 +79,8 @@ section#hamburger-menu > ul > li > div > a, section#hamburger-menu > ul > li > a
     color: white;
     font-weight: bolder;
 }
+
+
 section#calendar{
     background-color: green;
 }

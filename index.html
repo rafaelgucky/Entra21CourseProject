@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="/mobilestyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="mobilestyle.css">
+    <link rel="stylesheet" media="(min-width: 1000px)" href="largestyle.css">
     <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
     <title>Home</title>
 </head>
@@ -12,8 +13,8 @@
     <header>
         <nav>
             <section class="hamburger-menu">
-                <!-- Hamburger menu -->
-                <div>
+                <!-- Hamburger menu buttom-->
+                <div class="hamburger-buttom">
                     <img src="/Images/hamburger-menu.png" alt="menu" onclick="MobileUserMenu()">
                 </div>
 
@@ -22,16 +23,15 @@
                 </div>
             </section>
             <ul>
+                <li class="menu-buttons">
+                    <p class="logo">
+                        <span class="name">RG</span>
+                        <span class="developer">Developer</span>
+                    </p>
+                </li>
                 <li class="menu-buttons"><a href="#">Home</a></li>
                 <li class="menu-buttons"><a href="#">About</a></li>
                 <li class="menu-buttons"><a href="#">Notes</a></li>
-                <li>
-                    <form action="#" class="form-search">
-                        <input type="text" class="search-bar" placeholder="Search for anything">
-                        <input type="submit" value="🔍" id="btn-search">
-                    </form>
-                </li>
-                
                 <li class="user-image">
                     <img onclick="UserMenu()" src="/Images/UserPhoto.jpg" width="35px" id="user-image" alt="user image">
                 </li>
@@ -55,96 +55,88 @@
     </section>
 
    <main class="container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Mat</td>
-                    <td>Mat</td>
-                    <td>Mat</td>
-                    <td>Mat</td>
-                    <td>Mat</td>
-                </tr>
-                <tr>
-                    <td>Por</td>
-                    <td>Por</td>
-                    <td>Por</td>
-                    <td>Por</td>
-                    <td>Por</td>
-                </tr>
-                <tr>
-                    <td>Geo</td>
-                    <td>Geo</td>
-                    <td>Geo</td>
-                    <td>Geo</td>
-                    <td>Geo</td>
-                </tr>
-                <tr>
-                    <td>Fis</td>
-                    <td>Fis</td>
-                    <td>Fis</td>
-                    <td>Fis</td>
-                    <td>Fis</td>
-                </tr>
-                <tr>
-                    <td>His</td>
-                    <td>His</td>
-                    <td>His</td>
-                    <td>His</td>
-                    <td>His</td>
-                </tr>
-            </tbody>
-        </table>
-        <section id="calendar">
-            <div class="row align-items-center justify-content-center">
-                <div><p>1</p></div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div><p>8</p></div>
-                <div><p>9</p></div>
-                <div>10</div>
-                <div>11</div>
-                <div>12</div>
-                <div>13</div>
-                <div>14</div>
-            <div class="row align-items-center justify-content-center">
-                <div>15</div>
-                <div>16</div>
-                <div>17</div>
-                <div>18</div>
-                <div>19</div>
-                <div>20</div>
-                <div>21</div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div>22</div>
-                <div>23</div>
-                <div>24</div>
-                <div>25</div>
-                <div>26</div>
-                <div>27</div>
-                <div>28</div>
-            </div>
-            <div class="row align-items-center">
-                <div>29</div>
-                <div>30</div>
-                <div>31</div>
-            </div>
-        </section>
+    <section class="table">
+        <div>
+            <h2>Monday</h2>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+        </div>
+        <div>
+            <h2>Tuesday</h2>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+        </div>
+        <div>
+            <h2>Monday</h2>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+        </div>
+        <div>
+            <h2>Tuesday</h2>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+        </div>
+        <div>
+            <h2>Tuesday</h2>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+            <p>Matemática</p>
+        </div>
+    </section>
+
+    <section id="calendar">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        
+            <div><p>8</p></div>
+            <div><p>9</p></div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+        
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+        
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+        
+
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+        
+    </section>
    </main>
    <footer>
     <ul>
