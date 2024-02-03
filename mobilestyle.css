@@ -2,7 +2,8 @@ header > nav > ul{
     display: none;
 }
 
-header > nav > section{
+header > nav > section.hamburger-menu
+{
     width: 90%;
     padding: 10px 0px;
     display: grid;
@@ -10,7 +11,7 @@ header > nav > section{
     align-items: center;
     margin: auto;
 }
-header > nav > section > div > img{
+header > nav > section.hamburger-menu > div > img{
     width: 30px;
     cursor: pointer;
 }
