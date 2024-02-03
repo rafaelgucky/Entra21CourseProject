@@ -11,10 +11,20 @@
 <body>
     <header>
         <nav>
+            <section>
+                <!-- Hamburger menu -->
+                <div>
+                    <img src="../Images/hamburger-menu.png" alt="menu">
+                </div>
+
+                <div id="mobile-user-image">
+                    <img src="../Images/UserPhoto.jpg" alt="user-image" onclick="MobileUserMenu()">
+                </div>
+            </section>
             <ul>
-                <li class="menu-buttons"><a href="#" class="text-decoration-none">Home</a></li>
-                <li class="menu-buttons"><a href="#" class="text-decoration-none">About</a></li>
-                <li class="menu-buttons"><a href="#" class="text-decoration-none">Notes</a></li>
+                <li class="menu-buttons"><a href="#">Home</a></li>
+                <li class="menu-buttons"><a href="#">About</a></li>
+                <li class="menu-buttons"><a href="#">Notes</a></li>
                 <li>
                     <form action="#" class="form-search">
                         <input type="text" class="search-bar" placeholder="Search for anything">
@@ -28,7 +38,22 @@
             </dl>
         </nav>
     </header>
-    
+    <div id="user-menu">
+        <!--Div com o menu do usuário-->
+    </div>
+
+    <section id="hamburger-menu">
+        <!-- Section com o menu hamburger -->
+        <div>
+            <p onclick="MobileUserMenu()">X</p>
+        </div>
+        <ul>
+            <li class="hamburger-menu-buttons"><a href="#">Home</a></li>
+            <li class="hamburger-menu-buttons"><a href="#">About</a></li>
+            <li class="hamburger-menu-buttons"><a href="#">Notes</a></li>
+        </ul>
+    </section>
+
    <main class="container">
         <table>
             <thead>
@@ -78,7 +103,7 @@
                 </tr>
             </tbody>
         </table>
-        <div id="calendar">
+        <section id="calendar">
             <div class="row align-items-center justify-content-center">
                 <div><p>1</p></div>
                 <div>2</div>
@@ -119,7 +144,7 @@
                 <div>30</div>
                 <div>31</div>
             </div>
-        </div>
+        </section>
    </main>
    <footer>
     <ul>
@@ -129,10 +154,8 @@
     </ul>
         <p id="name">&copy; Rafael Gucky</p>
    </footer>
-    <div id="user-menu">
-        <!--Div com o menu do usuário-->
-    </div>
 </body>
 <script src="scripts.js"></script>
+<script src="mobilescript.js"></script>
 <!-- <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
 </html>

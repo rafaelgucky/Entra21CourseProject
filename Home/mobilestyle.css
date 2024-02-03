@@ -1,3 +1,73 @@
-div#calendar{
+header > nav > ul{
+    display: none;
+}
+
+header > nav > section{
+    width: 90%;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: auto;
+}
+header > nav > section > div > img{
+    width: 30px;
+    cursor: pointer;
+}
+div#mobile-user-image{
+    display: grid;
+    justify-content: end;
+}
+section#hamburger-menu{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    opacity: 0.9;
+}
+section#hamburger-menu > div{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: end;
+    align-items: center;
+}
+section#hamburger-menu > div > p{
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+section#hamburger-menu > ul{
+    width: 100%;
+    height: 90%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+section#hamburger-menu > ul > li{
+    width: 100%;
+    height: 10%;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
+section#hamburger-menu > ul > li:hover{
+    background-color: red;
+}
+section#hamburger-menu > ul > li > div > a, section#hamburger-menu > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+section#calendar{
     background-color: green;
 }
