@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" media="(min-width: 0px) and (max-width: 480px)" href="mobilestyle.css">
+    <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav class="container-fluid">
-            <dl class="row align-items-center justify-content-end h-100">
-                <dt class="col-1"><a href="#" class="text-decoration-none">Home</a></dt>
-                <dt class="col-1"><a href="#" class="text-decoration-none">About</a></dt>
-                <dt class="col-1"><a href="#" class="text-decoration-none">Notes</a></dt>
-                <dt class="col-4">
-                    <form action="#">
-                        <input type="text" class="w-75" id="search-bar" placeholder="Search for anything">
+        <nav>
+            <ul>
+                <li class="menu-buttons"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="menu-buttons"><a href="#" class="text-decoration-none">About</a></li>
+                <li class="menu-buttons"><a href="#" class="text-decoration-none">Notes</a></li>
+                <li>
+                    <form action="#" class="form-search">
+                        <input type="text" class="search-bar" placeholder="Search for anything">
                         <input type="submit" value="🔍" id="btn-search">
                     </form>
-                </dt>
+                </li>
                 
-                <dt class="col-5">
+                <li class="user-image">
                     <img onclick="UserMenu()" src="/Images/UserPhoto.jpg" width="35px" id="user-image" alt="user image">
-                </dt>
+                </li>
             </dl>
         </nav>
     </header>
@@ -77,47 +78,46 @@
                 </tr>
             </tbody>
         </table>
-        <div id="calendar" class="container-fluid">
+        <div id="calendar">
             <div class="row align-items-center justify-content-center">
-                <div class="col-1"><p>1</p></div>
-                <div class="col-2">2</div>
-                <div class="col-2">3</div>
-                <div class="col-2">4</div>
-                <div class="col-2">5</div>
-                <div class="col-2">6</div>
-                <div class="col-1">7</div>
+                <div><p>1</p></div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
             </div>
             <div class="row align-items-center justify-content-center">
-                <div class="col-1"><p>8</p></div>
-                <div class="col-2"><p>9</p></div>
-                <div class="col-2">10</div>
-                <div class="col-2">11</div>
-                <div class="col-2">12</div>
-                <div class="col-2">13</div>
-                <div class="col-1">14</div>
+                <div><p>8</p></div>
+                <div><p>9</p></div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+            <div class="row align-items-center justify-content-center">
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
             </div>
             <div class="row align-items-center justify-content-center">
-                <div class="col-1">15</div>
-                <div class="col-2">16</div>
-                <div class="col-2">17</div>
-                <div class="col-2">18</div>
-                <div class="col-2">19</div>
-                <div class="col-2">20</div>
-                <div class="col-1">21</div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-1">22</div>
-                <div class="col-2">23</div>
-                <div class="col-2">24</div>
-                <div class="col-2">25</div>
-                <div class="col-2">26</div>
-                <div class="col-2">27</div>
-                <div class="col-1">28</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
             </div>
             <div class="row align-items-center">
-                <div class="col-1">29</div>
-                <div class="col-2">30</div>
-                <div class="col-2">31</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div>
             </div>
         </div>
    </main>
@@ -134,5 +134,5 @@
     </div>
 </body>
 <script src="scripts.js"></script>
-<script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<!-- <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
 </html>
