@@ -1,9 +1,9 @@
 
 main.container{
-    grid-template-columns: calc(100% - 800px) 800px;
+    grid-template-columns: minmax(100px, 400px) 800px;
 }
 
 section.table{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
 }

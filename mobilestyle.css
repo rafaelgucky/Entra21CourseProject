@@ -5,7 +5,9 @@ header > nav > ul{
 header > nav{
     padding: 0px;
 }
-
+main.container{
+    grid-template-columns: 100%;
+}
 header > nav > section.hamburger-menu
 {
     width: 90%;
@@ -29,7 +31,7 @@ div#mobile-user-image{
 div#mobile-user-image > img{
     border-radius: 5px;
 }
-section#hamburger-menu{
+div#hamburger-menu{
     width: 100%;
     height: 100vh;
     display: none;
@@ -39,20 +41,21 @@ section#hamburger-menu{
     top: 0px;
     background-color: black;
     opacity: 0.9;
+    transition: 1s;
 }
-section#hamburger-menu > div{
+div#hamburger-menu > div{
     height: 50px;
     display: grid;
     grid-template-columns: 100%;
     justify-items: end;
     align-items: center;
 }
-section#hamburger-menu > div > p{
+div#hamburger-menu > div > p{
     margin-right: 10px;
     color: white;
     cursor: pointer;
 }
-section#hamburger-menu > ul{
+div#hamburger-menu > ul{
     width: 100%;
     height: 90%;
     list-style: none;
@@ -64,23 +67,25 @@ section#hamburger-menu > ul{
     justify-content: center;
     justify-items: center;
 }
-section#hamburger-menu > ul > li{
+div#hamburger-menu > ul > li{
     width: 100%;
     height: 10%;
+    background-color: red;
     border: 2px solid red;
     padding: 10px;
     text-align: center;
 }
-section#hamburger-menu > ul > li:hover{
-    background-color: red;
-}
-section#hamburger-menu > ul > li > div > a, section#hamburger-menu > ul > li > a{
+div#hamburger-menu > ul > li > div > a, div#hamburger-menu > ul > li > a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
 
+section.table{
+    grid-template-columns: 50% 50%;
+}
 
 section#calendar{
     background-color: green;
+    grid-template-rows: 14.2vw 14.2vw 14.2vw 14.2vw 14.2vw;
 }
