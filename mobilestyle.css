@@ -66,6 +66,7 @@ div#hamburger-menu > ul{
     align-items: center;
     justify-content: center;
     justify-items: center;
+    scrollbar-width: 10px;
 }
 div#hamburger-menu > ul > li{
     width: 100%;
@@ -81,11 +82,10 @@ div#hamburger-menu > ul > li > div > a, div#hamburger-menu > ul > li > a{
     font-weight: bolder;
 }
 
-section.table{
-    grid-template-columns: 50% 50%;
+div#user-menu{
+    top: 53px;
 }
 
 section#calendar{
-    background-color: green;
     grid-template-rows: 14.2vw 14.2vw 14.2vw 14.2vw 14.2vw;
 }
